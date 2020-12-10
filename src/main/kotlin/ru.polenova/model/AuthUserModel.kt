@@ -6,6 +6,6 @@ data class AuthUserModel (
         val idUser: Long = 0,
         val idPost: Long = 0,
         val username: String,
-        val password: String,
-        val firebaseToken: String? = null
+        val password: String
+        //val firebaseToken: String? = null
 ): Principal
