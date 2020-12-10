@@ -7,8 +7,9 @@ application {
     mainClassName = 'ru.polenova.ApplicationKt'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group 'ru.polenova'
+version '0.0.1'
+sourceCompatibility = 1.8
 
 repositories {
     jcenter()
@@ -31,6 +32,10 @@ dependencies {
     testImplementation "io.ktor:ktor-server-tests:1.2.4"
     testImplementation "com.jayway.jsonpath:json-path:2.4.0"
     implementation 'com.google.firebase:firebase-admin:6.10.0'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 compileKotlin {
